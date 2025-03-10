@@ -1,0 +1,243 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #a8d5ba; /* Verd claret */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px; /* Afegeix separació entre el menú i el logo */
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo {
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login {
+    background: #007bff;
+    color: white;
+}
+
+.register {
+    background: #28a745;
+    color: white;
+}
+
+.nav-icons {
+    display: none; /* Amagat per defecte */
+    gap: 15px;
+}
+
+.nav-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.car-detail {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.car-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-info-container {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.car-info-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.car-info-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.weekly-price {
+    color: blue;
+    font-weight: bold;
+}
+
+.rental-days {
+    margin-bottom: 30px;
+}
+
+.rental-days label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.days-options {
+    display: flex;
+    gap: 10px;
+}
+
+.days-options input[type="radio"] {
+    display: none;
+}
+
+.days-options label {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.days-options input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.calendar-btn {
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.payment-section {
+    margin-top: 30px;
+}
+
+.payment-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.payment-section select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.payment-btn {
+    background: #28a745;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.payment-btn:hover {
+    background: #218838;
+}
+
+/* Estils per al modal */
+.modal {
+    display: none; /* Amagat per defecte */
+    position: fixed;
+    z-index: 1001; /* Per sobre de la barra lateral */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fons negre amb opacitat */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#startDate, #endDate {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

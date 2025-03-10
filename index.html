@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Next Door</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-logo">
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <img src="./imatges/carnextdor-removebg-preview 1.png" alt="Car Next Door Logo" class="logo" id="logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="btn login" id="loginBtn">Login</button>
+            <button class="btn register" id="registerBtn">Registrar-se</button>
+            <div class="nav-icons" id="navIcons">
+                <i class="fas fa-home" id="homeIcon"></i>
+                <i class="fas fa-credit-card" id="paymentIcon"></i>
+                <i class="fas fa-user" id="userIcon"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">LLOGUER</a></li>
+            <li><a href="./cards.html">PAGAMENT</a></li>
+            <li><a href="./user.html">USUARI</a></li>
+            <li><a href="#">RESERVES</a></li>
+            <li><a href="#">CONFIGURACIÓ</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <section class="hero">
+            <img src="./imatges/Image (3).png" alt="Car Next Door" class="hero-image">
+            <div class="info-bar">
+                <div class="info-section" id="locationBtn">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ubicació</span>
+                </div>
+                <div class="info-section" id="pickupBtn">
+                    <i class="fas fa-car"></i>
+                    <span>Recollida</span>
+                </div>
+                <div class="info-section" id="returnBtn">
+                    <i class="fas fa-undo-alt"></i>
+                    <span>Devolució</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="nearby-cars">
+            <h2>PROPER A MI</h2>
+            <div class="car-list">
+                <div class="car-item" data-car='{"name": "Toyota Auris", "info": "Cotxe compacte, ideal per a la ciutat.", "price": 30, "weeklyPrice": 200, "image": "./imatges/cotxe.png"}'>
+                    <img src="./imatges/cotxe.png" alt="Car 1" class="car-image">
+                    <h3 class="car-title">Toyota Auris</h3>
+                    <p class="car-price">€30/dia</p>
+                </div>
+                <div class="car-item" data-car='{"name": "Seat Leon", "info": "Cotxe espaiós i còmode.", "price": 40, "weeklyPrice": 250, "image": "./imatges/cotxe.png"}'>
+                    <img src="./imatges/cotxe.png" alt="Car 2" class="car-image">
+                    <h3 class="car-title">Seat Leon</h3>
+                    <p class="car-price">€40/dia</p>
+                </div>
+                <div class="car-item" data-car='{"name": "Bugga", "info": "Cotxe de luxe per a ocasions especials.", "price": 70, "weeklyPrice": 450, "image": "./imatges/cotxe.png"}'>
+                    <img src="./imatges/cotxe.png" alt="Car 3" class="car-image">
+                    <h3 class="car-title">Bugga</h3>
+                    <p class="car-price">€70/dia</p>
+                </div>
+                <!-- Afegeix més cotxes aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal per al mapa de Google Maps -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="locationInput" placeholder="Escriu la teva ubicació">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1b6e4b0b1b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1613978888888!5m2!1sen!2sau"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Modal per al calendari de recollida -->
+    <div id="pickupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="pickupDate" placeholder="Selecciona una data">
+        </div>
+    </div>
+
+    <!-- Modal per al calendari de devolució -->
+    <div id="returnModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="returnDate" placeholder="Selecciona una data">
+        </div>
+    </div>
+</body>
+</html>
+               

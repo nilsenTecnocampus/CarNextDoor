@@ -1,0 +1,166 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #a8d5ba; /* Verd claret */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px; /* Afegeix separació entre el menú i el logo */
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo {
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login {
+    background: #007bff;
+    color: white;
+}
+
+.register {
+    background: #28a745;
+    color: white;
+}
+
+.nav-icons {
+    display: none; /* Amagat per defecte */
+    gap: 15px;
+}
+
+.nav-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.credit-cards {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.credit-cards h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-item .card-info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.card-item .card-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.card-item .delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn.save {
+    background: #28a745;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn.save:hover {
+    background: #218838;
+}
