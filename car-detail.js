@@ -78,4 +78,5 @@ document.addEventListener("DOMContentLoaded", function () {
     if (sessionStorage.getItem("loggedIn") === "true") {
         document.getElementById("navIcons").style.display = "flex";
     }
+    document.getElementById("navIcons").style.display = "flex";
 });
