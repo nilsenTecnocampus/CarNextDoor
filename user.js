@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         navIcons.style.display = "flex";
     }
 
+    navIcons.style.display = "flex";
+
     // Carrega el nom d'usuari des de la memòria
     const savedUsername = localStorage.getItem("username");
     if (savedUsername) {
