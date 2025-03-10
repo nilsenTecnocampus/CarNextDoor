@@ -43,7 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     registerBtn.addEventListener("click", function () {
-        window.location.href = "register.html";
+        sessionStorage.setItem("loggedIn", "true");
+        loginBtn.style.display = "none";
+        registerBtn.style.display = "none";
+        navIcons.style.display = "flex";
     });
 
     homeIcon.addEventListener("click", function () {
